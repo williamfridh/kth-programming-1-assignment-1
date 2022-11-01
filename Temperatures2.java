@@ -8,7 +8,7 @@
 A problem: processing measurement data
 
 Temperature readings are taken in one and the same place for a couple
-of weeks. The readings are taken regularly — the same number of
+of weeks. The readings are taken regularly ï¿½ the same number of
 readings each week. At the end of the measurement period the collected
 data is to be processed: for each week the least, the greatest and the
 average temperature is to be determined. The least, greatest and
@@ -130,6 +130,13 @@ class Temperatures2
 	public static double min (double[] temp)
 	{
 		// add code here
+		double t = Double.MAX_VALUE;
+		for (int i = 1; i < temp.length; i++) {
+			if (temp[i] < t) {
+                t = temp[i];
+			}
+		}
+		return t;
 	}
 
     // max returnes the greatest temperature in a specified array.
@@ -137,6 +144,13 @@ class Temperatures2
 	public static double max (double[] temp)
 	{
 		// add code here
+		double t = -Double.MAX_VALUE;
+		for (int i = 1; i < temp.length; i++) {
+			if (temp[i] > t) {
+                t = temp[i];
+			}
+		}
+		return t;
 	}
 
     // sum returnes the sum of the temperatures in a specified array.
@@ -144,5 +158,10 @@ class Temperatures2
 	public static double sum (double[] temp)
 	{
 		// add code here
+		double t = 0;
+		for (int i = 1; i < temp.length; i++) {
+			t += temp[i];
+		}
+		return t;
 	}
 }
