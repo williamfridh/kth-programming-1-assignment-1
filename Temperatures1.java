@@ -77,7 +77,8 @@ class Temperatures1
 		double[] maxT = new double[nofWeeks + 1];
 		double[] sumT = new double[nofWeeks + 1];
 		double[] avgT = new double[nofWeeks + 1];
-        // add code here
+        
+		/* ========================================= STUDENT CODE ========================================= */
 
 		// Loop each week.
 		for (int week = 0; week <= nofWeeks; week++)
@@ -101,6 +102,8 @@ class Temperatures1
 			avgT[week] = avgT[week] / nofMeasurementsPerWeek;
 		}
 
+		/* ========================================= END STUDENT CODE ========================================= */
+
 		// show the least, greatest and average temperatures
 		out.println("the least, greatest and average temperatures"
 		    + " - weekly");
@@ -120,7 +123,8 @@ class Temperatures1
 		double maxTemp = maxT[1];
 		double sumTemp = sumT[1];
 		double avgTemp = 0;
-        // add code here
+        
+		/* ========================================= STUDENT CODE ========================================= */
 
 		// Set default value.
 		minTemp = Double.MAX_VALUE;
@@ -141,6 +145,8 @@ class Temperatures1
 
 		// Set new avg temp.
 		avgTemp = avgTemp / (nofMeasurementsPerWeek * nofWeeks);
+
+		/* ========================================= END STUDENT CODE ========================================= */
 
         // show the least, greatest and average temperature for
         // the whole period

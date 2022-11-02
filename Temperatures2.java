@@ -129,7 +129,7 @@ class Temperatures2
     // Temperatures are given from index 1, inclusive.
 	public static double min (double[] temp)
 	{
-		// add code here
+		/* ========================================= STUDENT CODE ========================================= */
 		double t = Double.MAX_VALUE;
 		for (int i = 1; i < temp.length; i++) {
 			if (temp[i] < t) {
@@ -137,13 +137,14 @@ class Temperatures2
 			}
 		}
 		return t;
+		/* ========================================= END STUDENT CODE ========================================= */
 	}
 
     // max returnes the greatest temperature in a specified array.
     // Temperatures are given from index 1, inclusive.
 	public static double max (double[] temp)
 	{
-		// add code here
+		/* ========================================= STUDENT CODE ========================================= */
 		double t = -Double.MAX_VALUE;
 		for (int i = 1; i < temp.length; i++) {
 			if (temp[i] > t) {
@@ -151,17 +152,19 @@ class Temperatures2
 			}
 		}
 		return t;
+		/* ========================================= END STUDENT CODE ========================================= */
 	}
 
     // sum returnes the sum of the temperatures in a specified array.
     // Temperatures are given from index 1, inclusive.
 	public static double sum (double[] temp)
 	{
-		// add code here
+		/* ========================================= STUDENT CODE ========================================= */
 		double t = 0;
 		for (int i = 1; i < temp.length; i++) {
 			t += temp[i];
 		}
 		return t;
+		/* ========================================= END STUDENT CODE ========================================= */
 	}
 }
